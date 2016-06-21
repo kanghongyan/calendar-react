@@ -1,0 +1,62 @@
+.page-calender{
+  @color-lightGrey: #d9d9d9;//通用浅灰色
+  @color-blue: #1bb0ed;//通用蓝色
+  @font-color-lightGrey: #999;
+
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+  .calender{
+    .time{
+      line-height: 38px;
+      text-align: center;
+    }
+  }
+  table{
+    width: 100%;
+    td,th{
+      width: 14.2857%;
+      text-align: center;
+      line-height: 38px;
+    }
+  }
+  .day{
+    background: @color-lightGrey;
+    height: 30px;
+    td,th{
+      line-height: 30px;
+    }
+    .weekend{
+      color: @color-blue;
+    }
+  }
+
+  .m-calender{
+    td{
+      position: relative;
+    }
+    .today:before{
+      content: '今天';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      top: 0;
+      left: 0;
+      background: #fff;
+      z-index: 0;
+      color: @color-blue;
+    }
+    .grey{
+      color: #fff;
+    }
+    .disabled{
+      color: @font-color-lightGrey
+    }
+  }
+}
+
