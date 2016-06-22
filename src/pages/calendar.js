@@ -11,13 +11,19 @@ class Calendar extends React.Component {
   constructor(props){
     super(props);
 
+    this.state = {
+      showInput: false
+    }
+
   }
+
+
 
 
   render() {
     return (
       <div className="page-calender" id="page-calender">
-        <div className="m-content">
+        <div className="m-calender">
           <div>
             <div className="day">
               <table>

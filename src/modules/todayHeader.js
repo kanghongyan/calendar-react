@@ -5,8 +5,6 @@ import React from 'react';
 
 const TodayHeader = ( props ) => {
 
-  console.log(props);
-
   return (
     <p className="time">{ props.title }</p>
   )
