@@ -6,6 +6,8 @@ require('./calendar.less');
 
 import MonthView from '../modules/monthView';
 
+const logoImage = require('./img.jpg');
+
 class Calendar extends React.Component {
 
   constructor(props){
@@ -23,6 +25,7 @@ class Calendar extends React.Component {
   render() {
     return (
       <div className="page-calender" id="page-calender">
+        <img src={ logoImage } width="30" height="30"/>
         <div className="m-calender">
           <div>
             <div className="day">

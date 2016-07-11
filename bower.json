@@ -1,0 +1,8 @@
+{
+  "name": "bower-test",
+  "private": "true",
+  "devDependencies": {
+    "zepto": "^1.1.6",
+    "gridstack": "^0.2.5"
+  }
+}

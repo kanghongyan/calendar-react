@@ -6,4 +6,6 @@ import routes from './routes';
 
 require('./app.less');
 
+console.log('ff')
+
 ReactDOM.render(routes, document.getElementById('app'));

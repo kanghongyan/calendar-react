@@ -12,6 +12,7 @@ const InputModal = (props) => {
     props.handleUpdate(title);
   };
 
+  console.log('ffd d s ')
   return(
     <div className="input-modal">
       <input type="text" placeholder="title" id="title"/>
