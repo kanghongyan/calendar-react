@@ -21,6 +21,10 @@ class Calendar extends React.Component {
 
 
 
+  changeTheme() {
+    //TODO:push less 变量
+    let colorBlue= '#ff0000';
+  }
 
   render() {
     return (
@@ -46,6 +50,7 @@ class Calendar extends React.Component {
             <MonthView></MonthView>
           </div>
         </div>
+        <button onClick={ this.changeTheme }>change theme</button>
       </div>
     )
   }

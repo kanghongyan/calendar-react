@@ -1,7 +1,7 @@
+@import "../app";
 .page-calender{
-  @color-lightGrey: #d9d9d9;//通用浅灰色
-  @color-blue: #1bb0ed;//通用蓝色
-  @font-color-lightGrey: #999;
+  @color-light-grey: #d9d9d9;//通用浅灰色
+  @font-color-light-grey: #999;
 
   display: block;
   position: absolute;
@@ -10,7 +10,7 @@
   width: 100%;
   background: #fff;
   z-index: 2;
-  background: url("test.jpg") no-repeat center;
+  background: @color-light-grey url("test.jpg") no-repeat center;
   .calender{
     .time{
       line-height: 38px;
@@ -26,7 +26,7 @@
     }
   }
   .day{
-    background: @color-lightGrey;
+    background: @color-light-grey;
     height: 30px;
     td,th{
       line-height: 30px;
@@ -45,7 +45,7 @@
       vertical-align: top;
       h4{
         margin: 0;
-        color: #0b3752;
+        color: @h4-color;
       }
     }
     .today:before{
@@ -64,7 +64,7 @@
       color: #fff;
     }
     .disabled{
-      color: @font-color-lightGrey
+      color: @font-color-light-grey
     }
   }
 }
